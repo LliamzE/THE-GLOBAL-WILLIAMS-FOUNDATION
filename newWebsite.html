@@ -1,0 +1,235 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Helping Hands</title>
+    <link rel="stylesheet" href="bootstrap.css">
+    <style>
+        body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-image: url('photos/img3.jpg.jpg');
+    background-size: cover;
+    justify-content: space-between;
+    color:
+white;
+background-attachment: fixed;
+background-repeat: no-repeat;
+    
+}
+
+
+.container {
+    max-width: 960px;
+    margin: 0 auto;
+    padding: 0 15px;
+}
+
+header {
+    background-color: #333;
+    color:#f9f9f9 ;
+    padding:  20px;
+    margin: auto;
+    
+}
+
+header h1 {
+    margin:10;
+}
+nav{
+    display: flex;
+    padding: 10px;
+    justify-content: space-between;
+}
+nav img{width: 200px;}
+
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline;
+    margin-right: 20px;
+}
+
+nav ul li a {
+    color: #fff;
+    text-decoration: none;
+}
+.element {
+  width: 100%;
+  max-width: 300px; 
+  height: 100px;
+  background-color: #3498db;
+  animation: slideInFromLeft 1s ease-in-out;
+}
+
+@media screen and (max-width: 768px) {
+  .element {
+    max-width: 200px; 
+  }
+}
+
+
+.hero {
+    text-align: center;
+    padding: 100px 0;
+}
+
+
+.about {
+    padding: 50px 0;
+}
+
+
+.services {
+    background-color: #f9f9f9;
+    padding: 50px 0;
+}
+
+
+.contact {
+    padding: 50px 0;
+}
+
+.contact form {
+    max-width: 500px;
+    margin: 0 auto;
+}
+
+.contact form label {
+    display: block;
+    margin-bottom: 10px;
+}
+
+.contact form input[type="text"],
+.contact form input[type="email"],
+.contact form textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 20px;
+}
+
+.contact form button {
+    background-color: #333;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+}
+
+
+footer {
+    background-color: #333;
+    color: #fff;
+    padding: 20px 0;
+    text-align: center;
+}
+    </style>
+</head>
+<body>
+    
+    <header>
+        <div class="container">
+            <h1>THE WILLIAMS FUNDATION</h1>
+            <nav>
+                <a>
+                    <img src="../logo.png" alt="">
+                </a>
+                <ul>
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#about">About Us</a></li>
+                    <li><a href="#services">Services</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    
+
+    <section id="home" class="hero">
+        <div class="container">
+            <h2>WELCOME TO THE GLOBAL WILLIAMS FOUNDATION</h2>
+            <p>we are dedicated to providing support and assistance to less privilaged individuals and 
+                communities, helping them achieve a better quality of life.</p>
+        </div>
+    </section>
+
+    <section id="about" class="about">
+        <div class="container">
+            <h2>About Us</h2>
+            <p>Our organization is committed to making a positive impact in lives of those who are less
+                fortunate. Through our various prorams and initiatives, we strive to
+                 address the diverse needs of our community and 
+                promote social justice and equality for all.</p>
+        </div>
+    </section>
+
+    <section id="Services">
+        <div class="container">
+            <h2>Our Service</h2>
+            <div class="Service-grid">
+                <div class="Service">
+                    <h3>Food Assistance</h3>
+                    <p>Providing nutritious meals to individuals and families facing food insecurity.</p>
+                </div>
+                <div class="service">
+                    <h3>Shelter Support</h3>
+                    <p>Offering safe and temporary housing for those experiencing homelessness.</p>
+
+                </div>
+                <div class="service">
+                    <h3>Education Programs</h3>
+                    <p>Empowering children and adults Through access to education and skill-buliding opportunities.</p>
+                </div>
+                <div class="service">
+                    <h3>Healthcare Service</h3>
+                    <p>Ensuring access to essential healthcare serviceand resources for all members of our community.</p>
+                </div>
+
+            </div>
+        </div>
+    </section>
+    <section id="get involved">
+        <div class="container">
+            <h2>Get Involved</h2>
+            <p>There are many ways you can support our cause and make a diffrence in lives of the less privilaged</p> 
+            <ul>
+                <li>Volunteer your time and skill</li>
+                <li>Make a donation to our organization</li>
+                <li>Organize a fundraising event</li>
+                <li>Spread awareness about our work on socail media </li>
+            </ul>
+            <a href="contact" class="btn">Contact Us</a>
+        </div>
+    </section>
+
+    <section id="contact" class="contact">
+        <div class="container">
+            <h2>Contact Us</h2>
+            <p>If you need assistance or would like to volunteer, please reach out to us.</p>
+            <form>
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="name" required>
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required>
+                <label for="message">Message:</label>
+                <textarea id="message" name="message" required></textarea>
+                <button type="submit">Send</button>
+            </form>
+        </div>
+    </section>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2024 Helping Hands</p>
+        </div>
+    </footer>
+
+    <script src="scripts.js"></script>
+</body>
+</html>
